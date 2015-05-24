@@ -8,12 +8,50 @@
 		<link rel="stylesheet" type="text/css" href="./libs/reset.css">
 		<link rel="stylesheet" type="text/css" href="./libs/bootstrap.min.css">
 		<style type="text/css">
+			body {
+				font-family: 'Futura PT', 'Helvetica', Arial, sans-serif;
+			}
+			h1{
+				font-size: 2.5em;
+				margin-top: 1em;
+				font-weight: 600;
+			}
+
+			h2 {
+				font-size: 1.5em;
+				margin-top: 1em;
+			}
+
+			.feature {
+				background: url('img/featureTest.jpg') no-repeat;
+				background-size: cover;
+			}
+			.logo {
+				position: relative;
+				text-align: center;
+				margin-top: 100px !important;
+			}
+			.logo h1 {
+				max-width: 85%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.feature img {
+				width: 80%;
+				max-width: 600px;
+			}
+			.feature a {
+				text-decoration: none;
+				font-style: italic;
+				font-size: 1.25em;
+				margin: 1em 0;
+				display: inline-block;
+			}
 			.us {
 				background: purple;
 			}
-			.one {
+			.one, .logo, .formContain {
 				max-width: 1280px;
-				height: 300px;
 				margin: 0 auto;
 			}
 			.carey {
@@ -33,33 +71,53 @@
 	<body>
 		<div class='container-fluid'>
 			<div class='row feature'>
-				<div class='col-xs-12 logo'>
-					<h1>One Plus One Design Studio</h1>
+				<div class='col-xs-12'>
+					<div class='logo'>
+						<img src="img/onePlus.svg" alt='OnePlusOne Logo'>
+						<h1>One Plus One is a web design firm located in Minneapolis, Minnesota</h1>
+						<h2>We belive in creating unique, solution oriented designs that make our clients better</h2>
+						<a href='#'>Let's get to work</a>
+					</div>
 				</div>
 			</div>
+
+
+
 			<div class='row us'>
-				<!--This is where the stuff about One Plus One Goes -->
 				<div class='col-xs-12'>
 					<div class='one carey'>
 					</div>
 				</div>
 				<div class='col-xs-12'>
-					<div class='one plus'></div>
+					<div class='one plus'>
+					</div>
 				</div>
 				<div class='col-xs-12'>
-					<div class='one brian'></div>
+					<div class='one brian'>
+					</div>
 				</div>
 				<div class='col-xs-12'>
-					<div class='one team'></div>
+					<div class='one team'>
+					</div>
 				</div>
 			</div>
+
+
+
 			<div class='row contact'>
-				<div></div>
-				<!--This is where the contact form should go -->
+				<div class='col-xs-12'>
+					<div class='formContain'>
+					</div>
+				</div>
 			</div>
+
+
+
+
 			<footer class='row'>
 				<!--This is where the footer goes-->
 			</footer>
 		</div>
+		<script type="text/javascript" src='js/onePlus.js'></script>
 	</body>
 </html>
