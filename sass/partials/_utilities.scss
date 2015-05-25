@@ -1,3 +1,17 @@
+@import 'variables';
 @mixin sansSerif {
 	font-family: 'Futura PT', 'Helvetica', sans-serif;
+}
+
+@mixin tabletPlus {
+	@media (min-width: #{$tablet-width}) {
+		@content;
+	}
+
+}
+
+@mixin desktopPlus {
+	@media (min-width: #{$desktop-width}) {
+		@content;
+	}
 }

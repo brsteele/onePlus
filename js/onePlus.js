@@ -1,9 +1,15 @@
 //some sweet JS
 
-var height = window.innerHeight,
-	element = document.getElementsByClassName('feature')[0];
+function setFeatureHeight () {
+
+	var height = window.innerHeight,
+		element = document.getElementsByClassName('feature')[0];
 
 
-if (height > 480) {
-	element.setAttribute('style', 'height:' + height + 'px');
+	if (height > 400) {
+		element.setAttribute('style', 'height:' + height + 'px');
+	}
 }
+
+
+	setFeatureHeight();

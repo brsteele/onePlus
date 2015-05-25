@@ -7,76 +7,26 @@
 		<link rel="home" href="http://one-pl.us/">
 		<link rel="stylesheet" type="text/css" href="./libs/reset.css">
 		<link rel="stylesheet" type="text/css" href="./libs/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="./style.css">
 		<style type="text/css">
-			body {
-				font-family: 'Futura PT', 'Helvetica', Arial, sans-serif;
-			}
-			h1{
-				font-size: 2.5em;
-				margin-top: 1em;
-				font-weight: 600;
-			}
 
-			h2 {
-				font-size: 1.5em;
-				margin-top: 1em;
-			}
 
-			.feature {
-				background: url('img/featureTest.jpg') no-repeat;
-				background-size: cover;
-			}
-			.logo {
-				position: relative;
-				text-align: center;
-				margin-top: 100px !important;
-			}
-			.logo h1 {
-				max-width: 85%;
-				margin-left: auto;
-				margin-right: auto;
-			}
-			.feature img {
-				width: 80%;
-				max-width: 600px;
-			}
-			.feature a {
-				text-decoration: none;
-				font-style: italic;
-				font-size: 1.25em;
-				margin: 1em 0;
-				display: inline-block;
-			}
-			.us {
-				background: purple;
-			}
 			.one, .logo, .formContain {
 				max-width: 1280px;
 				margin: 0 auto;
 			}
-			.carey {
-				background: gray;
-			}
-			.brian {
-				background: red;
-			}
-			.plus {
-				background: green;
-			}
-			.team {
-				background: orange;
-			}
+
 		</style>
 	</head>
 	<body>
 		<div class='container-fluid'>
 			<div class='row feature'>
 				<div class='col-xs-12'>
-					<div class='logo'>
+					<div class='logo contain'>
 						<img src="img/onePlus.svg" alt='OnePlusOne Logo'>
 						<h1>One Plus One is a web design firm located in Minneapolis, Minnesota</h1>
 						<h2>We belive in creating unique, solution oriented designs that make our clients better</h2>
-						<a href='#'>Let's get to work</a>
+						<a href='#' class='btn blue'>Let's get to work</a>
 					</div>
 				</div>
 			</div>
@@ -84,22 +34,61 @@
 
 
 			<div class='row us'>
+
+
 				<div class='col-xs-12'>
-					<div class='one carey'>
+					<div class='carey contain row'>
+						
+							<div class='col-sm-3'>
+								<div class='profilePic'>
+									<img src="img/careyPic.jpg" alt='Carey Walberg'>
+								</div>
+							</div>
+							<div class='col-sm-9'>
+								<h2>Carey Walberg</h2>
+								<p>Carey brings a strong user experience focus to One Plus One. She's a CXA with Human Factors International as well as an experienced user researcher who loves to help clients figure out what they need. Carey is constantly smiling, probably because she's always thinking 2 steps ahead of everyone else. She also happens to frequent great restaurants and bars all over the Twin Cities. (yep, we know, Carey sounds cooler than Brian)</p>
+							</div>
+	
 					</div>
 				</div>
+
+
 				<div class='col-xs-12'>
-					<div class='one plus'>
+					<div class='contain plus center'>
+						<img src="img/plus.svg" alt='plus'>
 					</div>
 				</div>
+
+
 				<div class='col-xs-12'>
-					<div class='one brian'>
+					<div class='contain brian row'>
+						<div class='col-sm-3'>
+							<div class='profilePic'>
+								<img src="img/brianPic.jpg" alt='Brian Steele'>
+							</div>
+						</div>
+						<div class='col-sm-9'>
+							<h2>Brian Steele</h2>
+							<p>Brian has an extensive graphic and web design background. Several years ago, he decided to make the jump in to building sites and applications to pair alongside his design skills. Brian is a tad sarcastic and an extreme extrovert (just ask Carey). When he's not making things for clients, you'll probably find him exploring Minneapolis, always on foot or bike.</p>
+						</div>
 					</div>
 				</div>
+
 				<div class='col-xs-12'>
-					<div class='one team'>
+					<div class='contain plus center'>
+						<img src="img/equals.svg" alt='equals'>
 					</div>
 				</div>
+
+
+				<div class='col-sm-push-1 col-sm-10'>
+					<div class='contain team'>
+						<h2 class='center'>A Great Team!</h2>
+						<p>A passionate team focused on delivering great design solutions to our clients while providing an outstanding client service experience. We work to understand what you need, and we aren't satisfied until we get it right. Good design is a solution to a problem and it makes brands and organizations better. We have experience working with all different kinds of people and across all different kinds of projects. The bottom line is, we deliver good work, and we have fun doing it! One Plus Once can solve your design challenge.</p>
+					</div>
+				</div>
+
+
 			</div>
 
 
@@ -107,6 +96,20 @@
 			<div class='row contact'>
 				<div class='col-xs-12'>
 					<div class='formContain'>
+						<h2>You + Us</h2>
+						<form>
+							<label for='name'>Name</label>
+							<input type='text' id='name' required>
+							<label for='email'>Email</label>
+							<input type='email' id='email' required>
+							<label for='phone'>Phone Number</label>
+							<input type='phone' id='phone'>
+							<label for='budget'>Project Budget (just give us a ballpark)</label>
+							<input type='number' id='budget'>
+							<label for='description'>A Short Description</label>
+							<textarea id='description' resizable=false></textarea>
+							<input type='submit' value='Send'>
+						</form>
 					</div>
 				</div>
 			</div>
