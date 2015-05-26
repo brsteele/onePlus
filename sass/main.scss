@@ -32,6 +32,7 @@ a {
 	text-decoration: none;
 	font-size: 1.25em;
 	display: inline-block;
+	color: $blue;
 }
 
 .btn {
@@ -56,10 +57,6 @@ a {
 	text-align: center !important;
 }
 
-textarea {
-	resize: none;
-}
-
 
 .feature {
 	background: url('img/featureTest.jpg') no-repeat;
@@ -72,6 +69,10 @@ textarea {
 	img {
 		width: 80%;
 		max-width: 600px;
+	}
+	a {
+		font-size: 1.5em;
+		padding: 10px 25px;
 	}
 	.btn {
 		margin: 2em 0;
@@ -118,6 +119,79 @@ textarea {
 
 .contact {
 	background: $blue;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	h2 {
+		font-size: 2em;
+		color: #fff;
+		font-weight: 600;
+		margin-bottom: 10px;
+	}
+	h3 {
+		font-size: 1.4em;
+		color: #fff;
+		margin-bottom: 10px;
+	}
+}
+
+form {
+	max-width: 800px;
+	margin: 10px auto;
+	label {
+		display: block;
+		margin-top: 10px;
+		color: white;
+		margin-bottom: 3px;
+	}
+	input {
+		font-size: 1.25em;
+		border-radius: 3px;
+		box-shadow: none;
+		border: none;
+	}
+	input:not([type='submit']) {
+		width: 100%;
+		padding: .4em;
+	}
+	textarea {
+		width: 100%;
+		font-size: 1.25em;
+		border-radius: 3px;
+		border: none;
+	}
+	input[type='submit'] {
+		-webkit-appearance: none;
+		background: $blue;
+		color: #fff;
+		padding: 10px;
+		margin: 15px 0 0;
+		transition: all .5s;
+		cursor: pointer;
+		border: 1px solid #fff;
+		&:hover {
+			background: #fff;
+			border: 1px solid $blue;
+			color: $blue;
+		}
+	}
+}
+
+.formThanks {
+	text-align: center;
+	padding: 150px 0;
+	font-size: 2em;
+	color: #fff;
+}
+
+footer {
+	background: rgba(230, 230, 230, 1);
+	padding: 30px 0;
+	p {
+		text-align: center;
+	}
+	a {
+		font-size: 1em;
+	}
 }
 
 

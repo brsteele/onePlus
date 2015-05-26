@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="./libs/reset.css">
 		<link rel="stylesheet" type="text/css" href="./libs/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="./style.css">
+		<link rel="icon" type="image/png" href="favicon.png">
 		<style type="text/css">
 
 
@@ -17,6 +18,8 @@
 			}
 
 		</style>
+		<script src="//use.typekit.net/rzs7mzt.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
 	</head>
 	<body>
 		<div class='container-fluid'>
@@ -26,7 +29,7 @@
 						<img src="img/onePlus.svg" alt='OnePlusOne Logo'>
 						<h1>One Plus One is a web design firm located in Minneapolis, Minnesota</h1>
 						<h2>We belive in creating unique, solution oriented designs that make our clients better</h2>
-						<a href='#' class='btn blue'>Let's get to work</a>
+						<a href='#contactForm' class='btn blue'>Let's get to work</a>
 					</div>
 				</div>
 			</div>
@@ -83,8 +86,8 @@
 
 				<div class='col-sm-push-1 col-sm-10'>
 					<div class='contain team'>
-						<h2 class='center'>A Great Team!</h2>
-						<p>A passionate team focused on delivering great design solutions to our clients while providing an outstanding client service experience. We work to understand what you need, and we aren't satisfied until we get it right. Good design is a solution to a problem and it makes brands and organizations better. We have experience working with all different kinds of people and across all different kinds of projects. The bottom line is, we deliver good work, and we have fun doing it! One Plus Once can solve your design challenge.</p>
+						<h2 class='center'>Quite the Pair</h2>
+						<p>A passionate team focused on delivering great design solutions to our clients while providing an outstanding client service experience. We work to understand what you need, and we aren't satisfied until we get it right. Good design is a solution to a problem and it makes brands and organizations better. We have experience working with all different kinds of people and across all different kinds of projects. The bottom line is, we deliver good work, and we have fun doing it! One Plus One can solve your design challenge.</p>
 					</div>
 				</div>
 
@@ -93,22 +96,23 @@
 
 
 
-			<div class='row contact'>
+			<div class='row contact' id='contactForm'>
 				<div class='col-xs-12'>
 					<div class='formContain'>
-						<h2>You + Us</h2>
-						<form>
-							<label for='name'>Name</label>
-							<input type='text' id='name' required>
-							<label for='email'>Email</label>
-							<input type='email' id='email' required>
+						<h2 class='center'>Ready to Get to Work?</h2>
+						<h3 class='center'>It's never to early to start the conversation.</h3>
+						<form action='contact.php' method='POST' id='mainForm'>
+							<label for='name'>Name (required)</label>
+							<input type='text' name='name' id='name' required>
+							<label for='email'>Email (required)</label>
+							<input type='email' name='email' id='email' required>
 							<label for='phone'>Phone Number</label>
-							<input type='phone' id='phone'>
-							<label for='budget'>Project Budget (just give us a ballpark)</label>
-							<input type='number' id='budget'>
-							<label for='description'>A Short Description</label>
-							<textarea id='description' resizable=false></textarea>
-							<input type='submit' value='Send'>
+							<input type='tel' name='phone' id='phone'>
+							<label for='budget'>Project Budget (required-give us a ballpark)</label>
+							<input type='text' name='budget' id='budget'>
+							<label for='desc'>A Short Description (required)</label>
+							<textarea rows="4" name="desc" id='desc' required></textarea>
+							<div class='center'><input type='submit' id='formSubmit' value="Let's Get Started!"></div>
 						</form>
 					</div>
 				</div>
@@ -118,7 +122,9 @@
 
 
 			<footer class='row'>
-				<!--This is where the footer goes-->
+				<div class='col-xs-12'>
+					<p>One Plus One Design Studio, Minneapolis MN 55406  <a href='tel:6125684025'>(612)568-4025</a></p>
+				</div>
 			</footer>
 		</div>
 		<script type="text/javascript" src='js/onePlus.js'></script>
