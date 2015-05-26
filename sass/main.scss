@@ -61,6 +61,9 @@ a {
 .feature {
 	background: url('img/featureTest.jpg') no-repeat;
 	background-size: cover;
+	@include desktopPlus {
+		background-attachment: fixed;
+	}
 	.logo {
 		position: relative;
 		text-align: center;
@@ -158,6 +161,7 @@ form {
 		font-size: 1.25em;
 		border-radius: 3px;
 		border: none;
+		padding: .4em;
 	}
 	input[type='submit'] {
 		-webkit-appearance: none;

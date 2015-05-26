@@ -49,6 +49,9 @@ a {
 .feature {
   background: url("img/featureTest.jpg") no-repeat;
   background-size: cover; }
+  @media (min-width: 1025px) {
+    .feature {
+      background-attachment: fixed; } }
   .feature .logo {
     position: relative;
     text-align: center;
@@ -125,7 +128,8 @@ form {
     width: 100%;
     font-size: 1.25em;
     border-radius: 3px;
-    border: none; }
+    border: none;
+    padding: .4em; }
   form input[type='submit'] {
     -webkit-appearance: none;
     background: #0f94b5;
