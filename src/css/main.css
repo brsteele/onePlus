@@ -1,0 +1,174 @@
+body {
+  font-family: 'Futura PT', 'Helvetica', sans-serif; }
+
+h1 {
+  font-size: 1.75em;
+  font-weight: 600; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 2.5em; } }
+  .feature h1 {
+    margin: 1em auto 0;
+    max-width: 95%; }
+
+h2 {
+  font-size: 1.25em;
+  font-weight: 400; }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 1.75em; } }
+  .feature h2 {
+    margin: 1em auto 0;
+    max-width: 95%; }
+
+a {
+  text-decoration: none;
+  font-size: 1.25em;
+  display: inline-block;
+  color: #0f94b5; }
+
+.btn {
+  padding: 10px 15px;
+  border-radius: 3px; }
+
+.blue {
+  background: #0f94b5;
+  color: #fff;
+  transition: all 0.3s; }
+  .blue:hover {
+    background: #fff;
+    color: #0f94b5; }
+
+.contain {
+  max-width: 1280px;
+  margin: 0 auto; }
+
+.center {
+  text-align: center !important; }
+
+.feature {
+  background: url("../img/featureTest.jpg") no-repeat;
+  background-size: cover; }
+  @media (min-width: 1025px) {
+    .feature {
+      background-attachment: fixed; } }
+  .feature .logo {
+    position: relative;
+    text-align: center;
+    margin-top: 100px !important; }
+  .feature img {
+    width: 80%;
+    max-width: 600px; }
+  .feature a {
+    font-size: 1.5em;
+    padding: 10px 25px; }
+  .feature .btn {
+    margin: 2em 0; }
+
+.downArrow {
+  width: 100px;
+  height: 100px;
+  background: url("../img/down.svg") no-repeat center center;
+  background-size: 75%;
+  margin: 10px auto;
+  cursor: pointer;
+  opacity: .6;
+  transition: all 0.5s; }
+  .downArrow:hover {
+    opacity: 1;
+    transition: all 0.5s; }
+
+.us {
+  background: #e6e6e6;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .us .profilePic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #0f94b5;
+    overflow: hidden;
+    margin: 0 auto; }
+    .us .profilePic img {
+      width: 100%; }
+  .us .plus img {
+    max-width: 100px; }
+  .us h2 {
+    color: #0f94b5;
+    font-weight: 600;
+    font-size: 2em;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .us h2 {
+        text-align: left; } }
+  .us p {
+    font-size: 1.4em;
+    line-height: 125%; }
+  .us .carey, .us .plus, .us .brian {
+    margin-bottom: 30px; }
+
+.contact {
+  background: #0f94b5;
+  padding-top: 20px;
+  padding-bottom: 30px; }
+  .contact h2 {
+    font-size: 2em;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 10px; }
+  .contact h3 {
+    font-size: 1.4em;
+    color: #fff;
+    margin-bottom: 10px; }
+
+form {
+  max-width: 800px;
+  margin: 10px auto; }
+  form label {
+    display: block;
+    margin-top: 10px;
+    color: white;
+    margin-bottom: 3px; }
+  form input {
+    font-size: 1.25em;
+    border-radius: 3px;
+    box-shadow: none;
+    border: none; }
+  form input:not([type='submit']) {
+    width: 100%;
+    padding: .4em; }
+  form textarea {
+    width: 100%;
+    font-size: 1.25em;
+    border-radius: 3px;
+    border: none;
+    padding: .4em; }
+  form input[type='submit'] {
+    -webkit-appearance: none;
+    background: #0f94b5;
+    color: #fff;
+    padding: 10px;
+    margin: 15px 0 0;
+    transition: all 0.5s;
+    cursor: pointer;
+    border: 1px solid #fff; }
+    form input[type='submit']:hover {
+      background: #fff;
+      border: 1px solid #0f94b5;
+      color: #0f94b5; }
+
+.formThanks {
+  text-align: center;
+  padding: 150px 0;
+  font-size: 2em;
+  color: #fff; }
+
+footer {
+  background: #e6e6e6;
+  padding: 30px 0; }
+  footer p {
+    text-align: center; }
+  footer a {
+    font-size: 1em; }
+
+/*# sourceMappingURL=main.css.map */

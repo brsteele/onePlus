@@ -1,0 +1,214 @@
+@import 'partials/utilities';
+
+body {
+	@include sansSerif;
+}
+
+h1 {
+	font-size: 1.75em;
+	font-weight: 600;
+	@include tabletPlus {
+		font-size: 2.5em;
+	}
+	.feature & {
+		margin: 1em auto 0;
+		max-width: 95%;
+	}
+}
+
+h2 {
+	font-size: 1.25em;
+	font-weight: 400;
+	@include tabletPlus {
+		font-size: 1.75em;
+	}
+	.feature & {
+		margin: 1em auto 0;
+		max-width: 95%;
+	}
+}
+
+a {
+	text-decoration: none;
+	font-size: 1.25em;
+	display: inline-block;
+	color: $blue;
+}
+
+.btn {
+	padding: 10px 15px;
+	border-radius: 3px;
+}
+
+.blue {
+	background: $blue;
+	color: #fff;
+	transition: all .3s;
+	&:hover {
+		background: #fff;
+		color: $blue;
+	}
+}
+.contain {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+.center {
+	text-align: center !important;
+}
+
+
+.feature {
+	background: url('../img/featureTest.jpg') no-repeat;
+	background-size: cover;
+	@include desktopPlus {
+		background-attachment: fixed;
+	}
+	.logo {
+		position: relative;
+		text-align: center;
+		margin-top: 100px !important;
+	}
+	img {
+		width: 80%;
+		max-width: 600px;
+	}
+	a {
+		font-size: 1.5em;
+		padding: 10px 25px;
+	}
+	.btn {
+		margin: 2em 0;
+	}
+}
+
+.downArrow {
+	width: 100px;
+	height: 100px;
+	background: url('../img/down.svg') no-repeat center center;
+	background-size: 75%;
+	margin: 10px auto;
+	cursor: pointer;
+	opacity: .6;
+	transition: all .5s;
+	&:hover {
+		opacity: 1;
+		transition: all .5s;
+	}
+}
+
+.us {
+	background: rgba(230, 230, 230, 1);
+	padding-top: 30px;
+	padding-bottom: 30px;
+	.profilePic {
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		border: 3px solid $blue;
+		overflow: hidden;
+		margin: 0 auto;
+		img {
+			width: 100%;
+		}
+	}
+	.plus {
+		img {
+			max-width: 100px;
+		}
+	}
+	h2 {
+		color: $blue;
+		font-weight: 600;
+		font-size: 2em;
+		text-align: center;
+		@include tabletPlus {
+			text-align: left;
+		}
+	}
+	p {
+		font-size: 1.4em;
+		line-height: 125%
+	}
+	.carey, .plus, .brian {
+		margin-bottom: 30px;
+	}
+}
+
+.contact {
+	background: $blue;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	h2 {
+		font-size: 2em;
+		color: #fff;
+		font-weight: 600;
+		margin-bottom: 10px;
+	}
+	h3 {
+		font-size: 1.4em;
+		color: #fff;
+		margin-bottom: 10px;
+	}
+}
+
+form {
+	max-width: 800px;
+	margin: 10px auto;
+	label {
+		display: block;
+		margin-top: 10px;
+		color: white;
+		margin-bottom: 3px;
+	}
+	input {
+		font-size: 1.25em;
+		border-radius: 3px;
+		box-shadow: none;
+		border: none;
+	}
+	input:not([type='submit']) {
+		width: 100%;
+		padding: .4em;
+	}
+	textarea {
+		width: 100%;
+		font-size: 1.25em;
+		border-radius: 3px;
+		border: none;
+		padding: .4em;
+	}
+	input[type='submit'] {
+		-webkit-appearance: none;
+		background: $blue;
+		color: #fff;
+		padding: 10px;
+		margin: 15px 0 0;
+		transition: all .5s;
+		cursor: pointer;
+		border: 1px solid #fff;
+		&:hover {
+			background: #fff;
+			border: 1px solid $blue;
+			color: $blue;
+		}
+	}
+}
+
+.formThanks {
+	text-align: center;
+	padding: 150px 0;
+	font-size: 2em;
+	color: #fff;
+}
+
+footer {
+	background: rgba(230, 230, 230, 1);
+	padding: 30px 0;
+	p {
+		text-align: center;
+	}
+	a {
+		font-size: 1em;
+	}
+}
