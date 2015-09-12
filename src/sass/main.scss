@@ -152,6 +152,10 @@ a {
 	}
 }
 
+.disabled {
+	opacity: 0.3;
+}
+
 form {
 	max-width: 800px;
 	margin: 10px auto;
@@ -187,7 +191,7 @@ form {
 		transition: all .5s;
 		cursor: pointer;
 		border: 1px solid #fff;
-		&:hover {
+		&:hover:not([disabled='disabled']) {
 			background: #fff;
 			border: 1px solid $blue;
 			color: $blue;

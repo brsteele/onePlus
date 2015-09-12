@@ -38,8 +38,26 @@ var formActions = {
 				this.ajaxCall('contact.php', params);
 			}
 	},
+	activateButton : function(){
+			var re = /^\s*$/,
+				nameTest = document.getElementById('name').value,
+				emailTest = document.getElementById('email').value,
+				budgetTest = document.getElementById('budget').value;
+			if ( !re.test(nameTest) && !re.test(emailTest) && !re.test(budgetTest) ) {
+				var formButton = document.getElementById('formSubmit');
+				formButton.setAttribute('disabled', '');
+				formButton.className = "";
+			}
+	},
 	init : function() {
-		document.getElementById('formSubmit').addEventListener('click', this.submitForm.bind(formActions), false);
+		var formButton = document.getElementById('formSubmit'),
+			formInputs = document.getElementsByTagName('input'), i;
+		formButton.setAttribute('disabled', 'disabled');
+		formButton.className = "disabled";
+		formButton.addEventListener('click', this.submitForm.bind(formActions), false);
+		for (var i = 0; i < formInputs.length; i++) {
+			formInputs[i].addEventListener('keyup', this.activateButton.bind(formActions), false);
+		};
 	}
 };
 
