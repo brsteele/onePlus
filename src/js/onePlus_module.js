@@ -45,7 +45,7 @@ var formActions = {
 				budgetTest = document.getElementById('budget').value;
 			if ( !re.test(nameTest) && !re.test(emailTest) && !re.test(budgetTest) ) {
 				var formButton = document.getElementById('formSubmit');
-				formButton.setAttribute('disabled', '');
+				formButton.removeAttribute('disabled');
 				formButton.className = "";
 			}
 	},
