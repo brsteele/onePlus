@@ -1,4 +1,3 @@
-//some sweet JS
 function getHttpObject() {
 	var xhr;
 	if (window.XMLHttpRequest) {
