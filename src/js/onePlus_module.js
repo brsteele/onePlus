@@ -42,10 +42,13 @@ var formActions = {
 				nameTest = document.getElementById('name').value,
 				emailTest = document.getElementById('email').value,
 				budgetTest = document.getElementById('budget').value;
-			if ( !re.test(nameTest) && !re.test(emailTest) && !re.test(budgetTest) ) {
 				var formButton = document.getElementById('formSubmit');
+			if ( !re.test(nameTest) && !re.test(emailTest) && !re.test(budgetTest) ) {
 				formButton.removeAttribute('disabled');
 				formButton.className = "";
+			} else {
+				formButton.setAttribute('disabled', 'disabled');
+				formButton.className = 'disabled';
 			}
 	},
 	init : function() {
