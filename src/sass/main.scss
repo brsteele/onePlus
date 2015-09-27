@@ -105,7 +105,7 @@ a {
 }
 
 .us {
-	background: rgba(230, 230, 230, 1);
+	background: rgba(239, 239, 239, 1);
 	padding-top: 30px;
 	padding-bottom: 30px;
 	.profilePic {
@@ -120,12 +120,15 @@ a {
 		}
 	}
 	.plus {
+		@media screen and (min-width: 992px) {
+			padding-top: 175px;
+		}
 		img {
 			max-width: 100px;
 		}
 	}
 	h2 {
-		color: $blue;
+		color: $black;
 		font-weight: 600;
 		font-size: 2em;
 		text-align: center;
@@ -133,12 +136,49 @@ a {
 			text-align: left;
 		}
 	}
+	h3 {
+		font-size: 2em;
+	}
 	p {
 		font-size: 1.4em;
 		line-height: 125%
 	}
 	.carey, .plus, .brian {
 		margin-bottom: 30px;
+	}
+}
+
+.together {
+	background: $blue;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	h2 {
+		font-size: 2em;
+		font-weight: 600;
+		color: $white;
+	}
+	p {
+		color: $white;
+		font-size: 1.4em;
+		line-height: 125%;
+	}
+}
+
+.recentWork {
+	background: rbga(239, 239, 239, 1);
+	img {
+		max-width: 100%;
+	}
+	h2 {
+		font-size: 2em;
+		font-weight: 600;
+	}
+	p {
+		font-size: 1.4em;
+		line-height: 125%;
+	}
+	a {
+		font-size: 1.4em;
 	}
 }
 
@@ -222,4 +262,26 @@ footer {
 	a {
 		font-size: 1em;
 	}
+}
+
+/*Helper Classes */
+
+.light {
+	font-weight: 400;
+}
+
+.blueText {
+	color: $blue;
+}
+
+.padBot30 {
+	padding-bottom: 30px;
+}
+
+.padBot15 {
+	padding-bottom: 15px;
+}
+
+.padTop30 {
+	padding-top: 30px;
 }

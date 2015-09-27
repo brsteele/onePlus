@@ -87,7 +87,7 @@ a {
     transition: all 0.5s; }
 
 .us {
-  background: #e6e6e6;
+  background: #efefef;
   padding-top: 30px;
   padding-bottom: 30px; }
   .us .profilePic {
@@ -99,21 +99,52 @@ a {
     margin: 0 auto; }
     .us .profilePic img {
       width: 100%; }
+  @media screen and (min-width: 992px) {
+    .us .plus {
+      padding-top: 175px; } }
   .us .plus img {
     max-width: 100px; }
   .us h2 {
-    color: #0f94b5;
+    color: #333;
     font-weight: 600;
     font-size: 2em;
     text-align: center; }
     @media (min-width: 768px) {
       .us h2 {
         text-align: left; } }
+  .us h3 {
+    font-size: 2em; }
   .us p {
     font-size: 1.4em;
     line-height: 125%; }
   .us .carey, .us .plus, .us .brian {
     margin-bottom: 30px; }
+
+.together {
+  background: #0f94b5;
+  padding-bottom: 30px;
+  padding-top: 30px; }
+  .together h2 {
+    font-size: 2em;
+    font-weight: 600;
+    color: #fff; }
+  .together p {
+    color: #fff;
+    font-size: 1.4em;
+    line-height: 125%; }
+
+.recentWork {
+  background: rbga(239, 239, 239, 1); }
+  .recentWork img {
+    max-width: 100%; }
+  .recentWork h2 {
+    font-size: 2em;
+    font-weight: 600; }
+  .recentWork p {
+    font-size: 1.4em;
+    line-height: 125%; }
+  .recentWork a {
+    font-size: 1.4em; }
 
 .contact {
   background: #0f94b5;
@@ -181,5 +212,21 @@ footer {
     text-align: center; }
   footer a {
     font-size: 1em; }
+
+/*Helper Classes */
+.light {
+  font-weight: 400; }
+
+.blueText {
+  color: #0f94b5; }
+
+.padBot30 {
+  padding-bottom: 30px; }
+
+.padBot15 {
+  padding-bottom: 15px; }
+
+.padTop30 {
+  padding-top: 30px; }
 
 /*# sourceMappingURL=main.css.map */
