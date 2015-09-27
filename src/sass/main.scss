@@ -61,6 +61,7 @@ a {
 .feature {
 	background: url('../img/featureTest.jpg') no-repeat;
 	background-size: cover;
+	position: relative;
 	@include desktopPlus {
 		background-attachment: fixed;
 	}
@@ -81,7 +82,13 @@ a {
 		margin: 2em 0;
 	}
 }
-
+.actions {
+	@media screen and (min-height: 690px) {
+		position: absolute;
+		bottom: 0;
+	};
+	text-align: center;
+}
 .downArrow {
 	width: 100px;
 	height: 100px;

@@ -48,7 +48,8 @@ a {
 
 .feature {
   background: url("../img/featureTest.jpg") no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  position: relative; }
   @media (min-width: 1025px) {
     .feature {
       background-attachment: fixed; } }
@@ -64,6 +65,13 @@ a {
     padding: 10px 25px; }
   .feature .btn {
     margin: 2em 0; }
+
+.actions {
+  text-align: center; }
+  @media screen and (min-height: 690px) {
+    .actions {
+      position: absolute;
+      bottom: 0; } }
 
 .downArrow {
   width: 100px;
