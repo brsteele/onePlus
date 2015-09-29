@@ -15,3 +15,20 @@
 		@content;
 	}
 }
+
+
+.fadeInLeft {
+// 	transition-delay: .15s;
+	opacity: 0;
+	transform: translateX(-200px);
+	-webkit-transform: translateX(-200px);
+	transition-property: all;
+}
+
+.fadeInRight {
+// 	transition-delay: 1.5s;
+	opacity: 0;
+	transform: translateX(200px);
+	-webkit-transform: translateX(200px);
+	transition-property: all;
+}

@@ -1,5 +1,18 @@
+.fadeInLeft {
+  opacity: 0;
+  transform: translateX(-200px);
+  -webkit-transform: translateX(-200px);
+  transition-property: all; }
+
+.fadeInRight {
+  opacity: 0;
+  transform: translateX(200px);
+  -webkit-transform: translateX(200px);
+  transition-property: all; }
+
 body {
-  font-family: 'Futura PT', 'Helvetica', sans-serif; }
+  font-family: 'Futura PT', 'Helvetica', sans-serif;
+  overflow-x: hidden; }
 
 h1 {
   font-size: 1.75em;
@@ -118,7 +131,15 @@ a {
     font-size: 1.4em;
     line-height: 125%; }
   .us .carey, .us .plus, .us .brian {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    transition-property: all;
+    transition-timing-function: ease-in-out; }
+  .us .carey {
+    transition-delay: .1s;
+    transition-duration: .6s; }
+  .us .brian {
+    transition-delay: .45s;
+    transition-duration: 1s; }
 
 .together {
   background: #0f94b5;

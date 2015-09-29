@@ -131,16 +131,28 @@
 						<h3 class='center'>It's never to early to start the conversation.</h3>
 						<div class='formErrors'></div>
 						<form action='contact.php' method='POST' id='mainForm'>
-							<label for='name'>Name (required)</label>
-							<input type='text' name='name' id='name' required>
-							<label for='email'>Email (required)</label>
-							<input type='email' name='email' id='email' required>
-							<label for='phone'>Phone Number</label>
-							<input type='tel' name='phone' id='phone'>
-							<label for='budget'>Project Budget (required-give us a ballpark)</label>
-							<input type='text' name='budget' id='budget'>
-							<label for='desc'>A Short Description (required)</label>
-							<textarea rows="4" name="desc" id='desc' required></textarea>
+							<div class='row'>
+								<div class='col-md-6'>
+									<label for='name'>Name (required)</label>
+									<input type='text' name='name' id='name' required>
+								</div>
+								<div class='col-md-6'>
+									<label for='email'>Email (required)</label>
+									<input type='email' name='email' id='email' required>
+								</div>
+								<div class='col-md-6'>
+									<label for='phone'>Phone Number</label>
+									<input type='tel' name='phone' id='phone'>
+								</div>
+								<div class='col-md-6'>
+									<label for='budget'>Project Budget (required-give us a ballpark)</label>
+									<input type='text' name='budget' id='budget'>
+								</div>
+								<div class='col-xs-12'>
+									<label for='desc'>A Short Description (required)</label>
+									<textarea rows="4" name="desc" id='desc' required></textarea>
+								</div>
+							</div>
 							<div class='center'><input type='submit' id='formSubmit' value="Let's Get Started!"></div>
 						</form>
 					</div>

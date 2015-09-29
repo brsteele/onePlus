@@ -92,6 +92,30 @@ var layoutHeight = {
 	    }, 10);
 	}
 }
+
+
+
 formActions.init();
 layoutHeight.setFeature();
 document.querySelector(".downArrow").addEventListener("click",layoutHeight.runScroll.bind(layoutHeight),false);
+
+
+(function(){
+	var careyEl = document.getElementsByClassName('carey')[0],
+		brianEl = document.getElementsByClassName('brian')[0],
+		revealHeight = layoutHeight.getFeatureHeight(layoutHeight.featureEl);
+		careyEl.className = careyEl.className + " fadeInLeft";
+		brianEl.className = brianEl.className + " fadeInRight";
+		window.addEventListener('scroll', showUs, false);	
+		
+		
+		function showUs() {
+			var position = document.getElementsByTagName('body')[0];
+			var careyHidden = careyEl.className.indexOf('fadeInLeft');	
+			if ( position.scrollTop > revealHeight - 350 && careyHidden !== -1 ) {
+				careyEl.className = "carey contain row";
+				brianEl.className = "brian contain row";
+				window.removeEventListener('scroll', showUs, false);
+				}
+		}
+}())
