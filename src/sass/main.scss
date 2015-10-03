@@ -65,8 +65,8 @@ p {
 
 .feature {
 	background: url('../img/featureTest.jpg') no-repeat;
-	background-size: cover;
 	position: relative;
+	background-size: cover;
 	@include desktopPlus {
 		background-attachment: fixed;
 	}
@@ -177,6 +177,8 @@ p {
 		color: $white;
 		font-size: 1.4em;
 		line-height: 125%;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 }
 
@@ -192,6 +194,8 @@ p {
 	p {
 		font-size: 1.4em;
 		line-height: 125%;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 	a {
 		font-size: 1.4em;

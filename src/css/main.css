@@ -70,8 +70,8 @@ p {
 
 .feature {
   background: url("../img/featureTest.jpg") no-repeat;
-  background-size: cover;
-  position: relative; }
+  position: relative;
+  background-size: cover; }
   @media (min-width: 1025px) {
     .feature {
       background-attachment: fixed; } }
@@ -162,7 +162,9 @@ p {
   .together p {
     color: #fff;
     font-size: 1.4em;
-    line-height: 125%; }
+    line-height: 125%;
+    padding-left: 15px;
+    padding-right: 15px; }
 
 .recentWork {
   background: #efefef; }
@@ -173,7 +175,9 @@ p {
     font-weight: 600; }
   .recentWork p {
     font-size: 1.4em;
-    line-height: 125%; }
+    line-height: 125%;
+    padding-left: 15px;
+    padding-right: 15px; }
   .recentWork a {
     font-size: 1.4em; }
 
