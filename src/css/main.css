@@ -10,6 +10,12 @@
   -webkit-transform: translateX(200px);
   transition-property: all; }
 
+@keyframes pulse {
+  0% {
+    opacity: .2; }
+  100% {
+    opacity: 1; } }
+
 body {
   font-family: 'Futura PT', 'Helvetica', sans-serif;
   overflow-x: hidden; }
@@ -39,6 +45,9 @@ a {
   font-size: 1.25em;
   display: inline-block;
   color: #0f94b5; }
+
+p {
+  font-weight: 100; }
 
 .btn {
   padding: 10px 15px;
@@ -116,7 +125,8 @@ a {
     .us .plus {
       padding-top: 175px; } }
   .us .plus img {
-    max-width: 100px; }
+    max-width: 70px;
+    animation: pulse 2s ease infinite alternate; }
   .us h2 {
     color: #333;
     font-weight: 600;
@@ -155,7 +165,7 @@ a {
     line-height: 125%; }
 
 .recentWork {
-  background: rbga(239, 239, 239, 1); }
+  background: #efefef; }
   .recentWork img {
     max-width: 100%; }
   .recentWork h2 {

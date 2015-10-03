@@ -36,6 +36,10 @@ a {
 	color: $blue;
 }
 
+p {
+	font-weight: 100;
+}
+
 .btn {
 	padding: 10px 15px;
 	border-radius: 3px;
@@ -125,7 +129,8 @@ a {
 			padding-top: 175px;
 		}
 		img {
-			max-width: 100px;
+			max-width: 70px;
+			animation: pulse 2s ease infinite alternate;
 		}
 	}
 	h2 {
@@ -176,7 +181,7 @@ a {
 }
 
 .recentWork {
-	background: rbga(239, 239, 239, 1);
+	background: rgba(239, 239, 239, 1);
 	img {
 		max-width: 100%;
 	}

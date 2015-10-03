@@ -32,3 +32,12 @@
 	-webkit-transform: translateX(200px);
 	transition-property: all;
 }
+
+@keyframes pulse {
+	0% {
+		opacity: .2;
+	}
+	100% {
+		opacity: 1;
+	}
+}
