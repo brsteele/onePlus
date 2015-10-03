@@ -198,6 +198,9 @@ p {
 .disabled {
   opacity: 0.3; }
 
+.formContain {
+  padding: 0 15px; }
+
 form {
   max-width: 800px;
   margin: 10px auto; }
